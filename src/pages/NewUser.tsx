@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import { Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff, ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const NewUser = () => {
 
@@ -16,7 +17,7 @@ const NewUser = () => {
     } else {
       setError("");
       console.log("Passwords match, submit form");
-    }    
+    }
   };
 
   return (
@@ -24,7 +25,18 @@ const NewUser = () => {
       <Header />
       <div className="flex h-screen items-start justify-center bg-black mt-0">
         <div className="w-2/5 h-auto rounded-xl bg-gray-background-dark p-6 shadow-md mt-10">
-          <h2 className="text-3xl font-bold text-white text-center mb-10">Create Account</h2>
+          <div className="w-full">
+            <div className="self-start">
+              <Link
+                to="/login"
+                className="flex items-center text-gray-400 hover:text-white"
+              >
+                <ArrowLeft size={18} className="mr-1" />
+                Back
+              </Link>
+            </div>
+            <h2 className=" w-full text-3xl font-bold text-white text-center mb-10">Create Account</h2>
+          </div>
           <form className="mt-4 h-auto" onSubmit={createUser}>
             <div className="mb-4" >
               <label className="block text-white">Username</label>
@@ -56,7 +68,7 @@ const NewUser = () => {
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-3 top-9 text-gray-400 hover:text-white"
               >
-                {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                {showPassword ? <Eye size={18} /> : <EyeOff size={18} />}
               </button>
             </div>
             <div className="mb-4">
@@ -72,7 +84,7 @@ const NewUser = () => {
             {error && <p className="text-red-500">{error}</p>}
             <button
               className="w-full rounded-md bg-primary p-2 text-white mt-4 cursor-pointer mb-5">Create Account</button>
-            
+
           </form>
         </div>
       </div>
