@@ -26,7 +26,7 @@ const NewUser = () => {
       <div className="flex h-screen items-start justify-center bg-black mt-0">
         <div className="w-2/5 h-auto rounded-xl bg-gray-background-dark p-6 shadow-md mt-10">
           <div className="w-full">
-            <div className="self-start">
+            <div className="self-start"> 
               <Link
                 to="/login"
                 className="flex items-center text-gray-400 hover:text-white"
