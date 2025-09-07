@@ -27,7 +27,7 @@ const Home: React.FC = () => {
           <div className="flex-1 overflow-y-auto space-y-6">
 
             {/* Static Options available for user */}
-            <div className="space-y-3 mt-10">
+            <div className="space-y-3">
               <div className="bg-gray-background-dark p-2 rounded-lg max-w-xs cursor-pointer">
                 <label className="text-white">Option 1</label>
               </div>
