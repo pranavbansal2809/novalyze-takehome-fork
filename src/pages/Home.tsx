@@ -59,15 +59,6 @@ const Home: React.FC = () => {
               ))}
             </div>
           </div>
-
-          {/* Input box at the bottom */}
-          <div className="mt-2">
-            <input
-              type="text"
-              placeholder="Type a message..."
-              className="w-full p-2 border rounded-lg"
-            />
-          </div>
         </div>
 
 
