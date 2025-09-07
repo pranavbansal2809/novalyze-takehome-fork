@@ -31,6 +31,7 @@ const NewUser = () => {
                 to="/login"
                 className="flex items-center text-gray-400 hover:text-white"
               >
+                {/* Icon implementation from LLM */}
                 <ArrowLeft size={18} className="mr-1" />
                 Back
               </Link>
@@ -68,6 +69,7 @@ const NewUser = () => {
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-3 top-9 text-gray-400 hover:text-white"
               >
+                {/* Got the implementation of Eye icon from LLM */}
                 {showPassword ? <Eye size={18} /> : <EyeOff size={18} />}
               </button>
             </div>

@@ -18,6 +18,7 @@ export default function PdfViewer() {
 
   return (
     <div className="h-full flex flex-col items-center p-4">
+      {/* Tried implementing the react-pdf library to get out of standard implemntation of pdf viewer of a browser */}
       {/* <Document file={pdfDoc} onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
       </Document>

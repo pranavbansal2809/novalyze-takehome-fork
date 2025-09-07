@@ -48,6 +48,7 @@ const Home: React.FC = () => {
               </div>
             </div>
 
+            {/* LLM to handle a dynamic dict in code */}
             <div className="space-y-3 mt-10 mb-10">
               {Object.entries(optionsDict).map(([key, value], index) => (
                 <div
